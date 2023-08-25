@@ -140,7 +140,7 @@ font-size: 15px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-border: 1px solid #000;
+
 margin: 0 auto;
 }
 .mansBlock {
@@ -152,7 +152,7 @@ margin: 0 auto;
 }
 .mansBlock__section {
   position: relative;
-  border: 1px solid #000;
+  
 }
 .mansBlock__section-image {
 }
@@ -284,37 +284,4 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-}
-.box {
-  background-color: aqua;
-  width: 500px;
-  height: 500px;
-  position: relative;
-  
-  overflow: hidden; 
-  
-}
-.box__inside {
-  background-color: brown;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left:20%;
-  top:10%;
-
-}
-.box__inside2 {
-  background-color: chocolate;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left:110%;
-  top:0;
- 
-  transition: 0.6s;
-}
-.box:hover .box__inside2 {
-  left: 50px;
- 
-
 }
