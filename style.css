@@ -9,8 +9,9 @@
     scroll-behavior: smooth; 
   }
   .header {
-   
-    width: 1200px;
+   border: 1px solid #000;
+
+   max-width: 1200px;
     margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -87,7 +88,7 @@ animation: InfoBlock 3s linear infinite alternate;
 
 .benefits {
   display: flex;
-  width: 1200;
+  max-width: 1200;
   flex-wrap: wrap;
  
   justify-content: space-between;
@@ -96,7 +97,7 @@ animation: InfoBlock 3s linear infinite alternate;
 }
 .benefits__item {
   width: 400px;
- 
+  margin: 0 auto;
   display: flex;
   justify-content:space-around;
   margin-bottom: 80px;
@@ -132,7 +133,7 @@ font-weight: 400;
 line-height: 22px; /* 146.667% */
 }
 .second-info-block {
-  width: 1104px;
+  max-width: 1104px;
   color: #B6B6B6;
 text-align: center;
 font-family: Roboto;
@@ -140,18 +141,20 @@ font-size: 15px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+padding: 0 20px;
 
 margin: 0 auto;
 }
 .mansBlock {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  max-width: 1200px;
   margin: 50px auto;
   flex-wrap: wrap;
 }
 .mansBlock__section {
   position: relative;
+  margin: 20px auto;
   
 }
 .mansBlock__section-image {
@@ -230,12 +233,14 @@ align-items: flex-end;
 
 .footer {
  border-top: 1px solid #B6B6B6;
+ padding: 0 20px;
  padding-top: 20px;
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  max-width: 1200px;
   
   margin: 30px auto;
+  
 }
 .footer__text {
   margin-top: 10px;
@@ -285,3 +290,19 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+/* Стилі для дуже великих екранів (дисплей 1200рх і більше).
+Записуються без медіа-запитів, тому що контрольна точка не має верхньої межі. */
+
+/* Стилі для великих екранів (дисплей максимум 1199рх) */
+@media (max-width: 1199px) { 
+
+ }
+
+/* Стилі для середніх екранів (дисплей максимум 991рх) */
+    @media (max-width: 991px) { ... }
+
+/* Стилі для малих екранів (дисплей максимум 767рх) */
+    @media (max-width: 767px) { ... }
+
+/* Стилі для дуже малих екранів (дисплей максимум 575рх) */
+    @media (max-width: 575px) { ... }
